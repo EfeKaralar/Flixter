@@ -95,7 +95,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             else if (orientation == Configuration.ORIENTATION_LANDSCAPE){
                 tvTitleLS.setText(movie.getTitle());
                 tvOverviewLS.setText(movie.getOverview());
-                Glide.with(context).load(movie.getBackdropPath()).placeholder(R.drawable.ic_baseline_sync_24).into(ivBackdrop);
+                Glide.with(context)
+                        .load(movie.getBackdropPath())
+                        .placeholder(R.drawable.ic_baseline_sync_24)
+                        .into(ivBackdrop);
             }
         }
     }
