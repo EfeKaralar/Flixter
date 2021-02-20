@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity"
 
-    android:orientation="vertical"
+    android:orientation="vertical">
 
-
-    >
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
 
     <TextView
         android:id="@+id/tvTitleDetail"
