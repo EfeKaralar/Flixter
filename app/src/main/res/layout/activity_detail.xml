@@ -15,6 +15,7 @@
 
     <TextView
         android:id="@+id/tvTitleDetail"
+        android:transitionName="title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
@@ -30,6 +31,7 @@
 
     <TextView
         android:id="@+id/tvOverViewDetail"
+        android:transitionName="overview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah." />

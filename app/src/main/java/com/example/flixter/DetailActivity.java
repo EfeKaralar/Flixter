@@ -33,6 +33,8 @@ public class DetailActivity<YoutubePlayerView> extends YouTubeBaseActivity {
     RatingBar ratingBar;
     YouTubePlayerView youTubePlayerView;
 
+    double rating;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +54,7 @@ public class DetailActivity<YoutubePlayerView> extends YouTubeBaseActivity {
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float) movie.getRating()); //setRating needs a float. double is more precise, so we need to downcast it to float.
 
+        rating = movie.getRating();
 
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(String.format(VIDEOS_URL, movie.getMovieId()), new JsonHttpResponseHandler() {
@@ -82,7 +85,10 @@ public class DetailActivity<YoutubePlayerView> extends YouTubeBaseActivity {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.d(TAG, "onInitializationSuccess: ");
-                youTubePlayer.cueVideo(youtubeKey);
+                if (rating > 5.5){
+                    youTubePlayer.loadVideo(youtubeKey);
+                }
+                else { youTubePlayer.cueVideo(youtubeKey); }
             }
 
             @Override
