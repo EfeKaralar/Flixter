@@ -28,7 +28,7 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 
 The most challenging aspect was the data binding process, since it was a new way of looking to what we've been doing so far.
 
-Also, I made the auto-play future for movies with more than 5.5 stars, since finding a movie beneath 5 stars was very hard. This would make it impossible to show this future in the walkthrough.
+Also, I made the auto-play feature for movies with more than 5.5 stars, since finding a movie beneath 5 stars was very hard. Otherwise, this would make it impossible to show this feature in the walkthrough.
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
