@@ -1,10 +1,6 @@
 # Flixter
 Flixter is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-## To Be Added
-
-📝 `NOTE` Paste this template at the top of your existing `README.md` file from part 1 of this assignment. (🚫 Remove this paragraph after after checking off completed user stories)
-
 ## Flix Part 2
 
 ### User Stories
@@ -26,13 +22,13 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 
 ### App Walkthough GIF
 
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
-
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src='walkthrough3.gif' title='Video Walkthrough' width=500 alt='Video Walkthrough Part 2' />
 
 ### Notes
 
-Describe any challenges encountered while building the app.
+The most challenging aspect was the data binding process, since it was a new way of looking to what we've been doing so far.
+
+Also, I made the auto-play future for movies with more than 5.5 stars, since finding a movie beneath 5 stars was very hard. This would make it impossible to show this future in the walkthrough.
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
@@ -59,7 +55,7 @@ Describe any challenges encountered while building the app.
 
 ### App Walkthough GIF
 
-<img src='walkthrough2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough2.gif' title='Video Walkthrough' width=500 alt='Video Walkthrough Part 1' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
